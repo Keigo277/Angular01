@@ -6,14 +6,16 @@
        <button class="add-button" (click)="add(newTask.value)">Add</button>
   </div>
   <table>
-    <tr *ngFor="let task of tasks" class="even">
-      <td>
+    <tr *ngFor="let task of tasks; let i = index" [class.even]="i%2==0" [class.oppo]="i%2">
+      <td [class.is-done]="task.isDone">
         
-          ・{{task}}
+          ・{{task.title}}
       </td>
       <td>
-        <button class="remove-button">X</button>
-        <button class="done-button">Done</button>
+        <button class="remove-button" (click)="remove(task)">X</button>
+        <button class="done-button" (click)="task.toggleIsDone()">
+          {{task.isDone ? "Undo" : "Done"}}
+        </button>
       </td>
     </tr>
     <!-- <tr class="even">

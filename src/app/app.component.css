@@ -69,6 +69,20 @@ align-items: center;
 
 }
 
+.oppo{
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    opacity: 0.8;
+    color:white;
+    width: 40%;
+    margin-left: 5rem;
+   
+    /* margin-left: 2rem; */
+  align-items: center;
+  
+  }
+
 .odd{
     display: flex;
   justify-content: space-between;
@@ -110,6 +124,20 @@ align-items: center;
     border: 1px solid black;
 }
 
+.oppo > td > button{
+    height: 30px;
+    /* width: 40px;
+    font-size: 10px;
+    margin-right: 10px; */
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+}
+
 .odd > td > button{
     height: 2rem;
+}
+
+.is-done{
+    text-decoration: line-through;
 }
