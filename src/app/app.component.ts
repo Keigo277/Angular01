@@ -15,4 +15,7 @@ export class AppComponent {
     "Ant Man"
 
   ]
+  add(newTask:string){
+    this.tasks.push(newTask);
+  }
 }
