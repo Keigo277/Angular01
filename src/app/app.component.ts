@@ -7,4 +7,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'todo-list';
+  tasks = [
+    "Jin",
+    "Airon man",
+    "Captain American",
+    "Thor",
+    "Ant Man"
+
+  ]
 }
